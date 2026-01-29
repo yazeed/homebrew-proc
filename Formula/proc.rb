@@ -1,26 +1,26 @@
 class Proc < Formula
-  desc "Semantic process management CLI"
+  desc "Semantic CLI tool for process management"
   homepage "https://github.com/yazeed/proc"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yazeed/proc/releases/download/v#{version}/proc-darwin-aarch64.tar.gz"
-      sha256 "a9b0f8e286dd8627d4cf4c2c4774c904042d2c1b3832f10db8784469af6dfc43"
+      sha256 "a21a8190a0177bfbed75d5961416c0551efa88a01c4598a12787e261239674ba"
     else
       url "https://github.com/yazeed/proc/releases/download/v#{version}/proc-darwin-x86_64.tar.gz"
-      sha256 "bb1772b628db024b30c4681589fd5e6c04585a592e9ae235cfbbf912a676dbdd"
+      sha256 "70c6dd73f2f0aff1682e73c0a54c04f2ab2719e57ed4d85c80d72af49990c4ff"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/yazeed/proc/releases/download/v#{version}/proc-linux-aarch64.tar.gz"
-      sha256 "e2cd4d46312afdbb0360e89d708103052580502fadd05288634cf5aa2cc3dd84"
+      sha256 "362a9c3440dedbf5d38fdd4f56fa8bdc39512d2ec278cb0e2e3acbde315846b0"
     else
       url "https://github.com/yazeed/proc/releases/download/v#{version}/proc-linux-x86_64.tar.gz"
-      sha256 "931ca0e1466f0a6495e28246e8dd52a65c7db08922cbf3c50e7d6a03258476fc"
+      sha256 "860275ac4d0d9828e1073a7b34816a632e88445d8ca7f644a51c4cceeaa869e5"
     end
   end
 
